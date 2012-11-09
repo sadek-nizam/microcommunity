@@ -71,7 +71,7 @@ exports.install = function(app, db){
 	app.get('/auth/google/return', 
 		passport.authenticate('google', { successRedirect: '/',
 		                                  failureRedirect: '/login' }));
-	
+
 
 
 };

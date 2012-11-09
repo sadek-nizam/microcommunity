@@ -20,7 +20,8 @@ var express = require('express')
   , follows_provider = require('./providers/follows-provider')    
   , database = require('./providers/db')
   , comments_api = require('./api/comments')
-  , votes_api = require('./api/votes')  
+  , votes_api = require('./api/votes')
+  , settings = require('./routes/settings')
   ;
 
 //database and providers setup

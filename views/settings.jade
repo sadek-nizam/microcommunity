@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	#name
+		label 
+		|Site Name :
+		input(type="text",name="site_name")
+		
+		-var apps = ["Google","Twitter","Facebook"]
+		each app in apps
+			label
+			|#{app} App Key :
+			input(type="text",name="#{app}_key")
+
+		
+		
