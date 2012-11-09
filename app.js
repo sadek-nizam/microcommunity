@@ -202,6 +202,8 @@ app.resource('api/wikipages', require('./api/wikipages'));
 app.resource('api/activities', require('./api/activities'));        
 app.resource('api/:collection/:id/:type/votes', votes_api);        
 
+//settings api
+app.get('/settings', settings.index);
 
 app.post('/api/users/:follower/follows/:followed', function(req, res){
 	follows_provider.follow(req.params.follower, req.params.followed, function(err){
